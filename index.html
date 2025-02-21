@@ -1,0 +1,110 @@
+<DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClarenceLove</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>ClarenceLove </h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Clarence</a></li>
+                    <li><a href="#world">World</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="liuchuguishi">
+                <img src="司岚SSR【六出诡事】3的副本.jpg" width=100% height=auto>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Clarence</h2>
+            <div class="about-content">
+                <img src="司岚【神弃末路·主界面全景】.jpg" alt="司岚">
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="story">
+        <div class="container">
+            <h2>World</h2>
+            <div class="xianshishijie">
+                <p>现实世界</p>
+                <p>“我们年少时总有很大的梦想，大到不可能。”
+                    在现实世界——圣塞西尔学院，他是心怀公义的学生会长。</p>
+            </div>
+        <div class="yesaidalu">
+            <p>叶塞大陆</p>
+            <p>"这一切因我而始，也将由我终结。"
+                在平行世界——叶塞大陆，他是冷漠深沉的首席法师。
+                光阴易逝，高塔依旧。
+                他是法师塔的首席法师，
+                也是与秘密为伴的沉默独行者。
+            </p>
+        </div>
+        <div class="lingjie">
+            <p>乐园世界</p>
+            <p>“在认识你之前，猎鹰不需要同伴。而现在，他找到了自己的栖身之所。”
+                关于“猎鹰”……他是沙海上行走的传奇，独来独往的雇佣兵，擅长潜伏狙击和猎杀……而且他从来不需要同伴。
+                来到戈壁沙海，他是你接触的第一个能力者。
+                而再次相遇，则是在冲突之中。</p>
+
+        </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="slider">
+                <div class="slides">
+                    <img src="1.jpg" alt="画廊1" class="slide">
+                    <img src="2.jpg" alt="画廊2" class="slide">
+                    <img src="images/gallery3.jpg" alt="画廊3" class="slide">
+                </div>
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>联系</h2>
+            <form id="contact-form">
+                <label for="name">姓名:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">邮箱:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">留言:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">发送</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 时空中的绘旅人 - 司岚</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
