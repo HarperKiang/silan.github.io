@@ -23,51 +23,168 @@
         </div>
     </header>
 
-    <section id="home" class="hero">
+    <!-- <section id="home" class="hero">
         <div class="container">
             <div class="liuchuguishi">
                 <img src="司岚SSR【六出诡事】3的副本.jpg" width=100% height=auto>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <style>
+        /* 轮播容器 */
+        .carousel {
+            display:inline-block;
+            overflow: hidden; /* 隐藏溢出内容 */
+            position: relative;
+            margin: 0 auto;
+            border: 0 px solid #ccc;
+        }
+
+        /* 图片列表 */
+        .carousel ul {
+            display: flex;
+            width: 300%; /* 3 张图片，每张占 100% */
+            transition: transform 3s ease; /* 添加过渡效果 */
+        }
+
+        /* 图片样式 */
+        .carousel li {
+            list-style: none;
+            width: 100%; /* 每张图片占满容器 */
+        }
+
+        .carousel img {
+            display: block;
+            width: 100%;
+            margin-left: 20px;
+            margin-right: 20px;
+            height: auto;
+            object-fit: cover; /* 图片填充容器 */
+        }
+
+        /* 导航按钮 */
+        .carousel button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .carousel button.prev {
+            left: 10px;
+        }
+
+        .carousel button.next {
+            right: 10px;
+        }
+
+        @keyframes slide {
+        0% { transform: translateX(0); }
+        33.33% { transform: translateX(-100%); }
+        66.66% { transform: translateX(-200%); }
+        100% { transform: translateX(0); }
+       }
+    </style>
+
+    <div class="carousel">
+        <ul>
+            <li><img src="司岚SSR【无餍无终】2.jpg" alt="Image 1"></li>
+            <li><img src="司岚SSR[二律背反]2的副本.png" alt="Image 2"></li>
+            <li><img src="1.jpg" alt="Image 3"></li>
+        </ul>
+        <button class="prev">&#10094;</button> <!-- 上一张按钮 -->
+        <button class="next">&#10095;</button> <!-- 下一张按钮 -->
+    </div>
 
     <section id="about" class="about">
-        <div class="container">
-            <h2>About Clarence</h2>
+        <div class="container style1">
+                <img src="美宣.png" alt="美宣">
+                <div class="text-content">
+                    <h2>About Clarence</h2>
+                    <p>叶塞大陆</p>
+                    <p>"这一切因我而始，也将由我终结。"<br>
+                    在平行世界——叶塞大陆，他是冷漠深沉的首席法师。<br>
+                    光阴易逝，高塔依旧。<br>
+                    他是法师塔的首席法师，<br>
+                    也是与秘密为伴的沉默独行者。<br>
+                    </p>
+                </div>
+            </div>
             <div class="about-content">
-                <img src="司岚【神弃末路·主界面全景】.jpg" alt="司岚">
-                <p></p>
             </div>
         </div>
     </section>
+
+        <style>
+            /* 容器样式 */
+            .style1 {
+                display: flex;
+                align-items: center; /* 垂直居中 */
+                gap: 20px; /* 图片和文字之间的间距 */
+                margin:auto;
+                padding: 20px;
+                border: 0px solid #ccc;
+                border-radius: 10px;
+                max-width: 1000px; /* 限制容器宽度 */
+                height: auto;
+            }
+    
+            /* 图片样式 */
+            .style1 img {
+                width: 50%; /* 图片宽度 */
+                float:left;
+                height: auto; /* 高度自适应 */
+                border-radius: 10px; /* 圆角 */
+                transition: transform 0.3s ease; /* 悬停放大效果 */
+            }
+    
+            /* 鼠标悬停放大效果 */
+            .style1 img:hover {
+                transform: scale(1.05); /* 轻微放大 */
+            }
+    
+            /* 文字样式 */
+            .text-content {
+                flex: 1; /* 文字占据剩余空间 */
+            }
+            .text-content h2 {
+                margin-top: 0;
+                font-size: 24px;
+                color: #333;
+            }
+            .text-content p {
+                font-size: 16px;
+                color: #666;
+                line-height: 1.6;
+            }
+        </style>
 
     <section id="story" class="story">
         <div class="container">
             <h2>World</h2>
             <div class="xianshishijie">
                 <p>现实世界</p>
-                <p>“我们年少时总有很大的梦想，大到不可能。”
-                    在现实世界——圣塞西尔学院，他是心怀公义的学生会长。</p>
+                <p>“我们年少时总有很大的梦想，大到不可能。”<br>
+                    在现实世界——圣塞西尔学院，他是心怀公义的学生会长。<br>
+                </p>
             </div>
-        <div class="yesaidalu">
-            <p>叶塞大陆</p>
-            <p>"这一切因我而始，也将由我终结。"
-                在平行世界——叶塞大陆，他是冷漠深沉的首席法师。
-                光阴易逝，高塔依旧。
-                他是法师塔的首席法师，
-                也是与秘密为伴的沉默独行者。
-            </p>
-        </div>
+
         <div class="leyuan">
             <p>乐园世界</p>
-            <p>“在认识你之前，猎鹰不需要同伴。而现在，他找到了自己的栖身之所。”
-                关于“猎鹰”……他是沙海上行走的传奇，独来独往的雇佣兵，擅长潜伏狙击和猎杀……而且他从来不需要同伴。
-                来到戈壁沙海，他是你接触的第一个能力者。
+            <p>“在认识你之前，猎鹰不需要同伴。而现在，他找到了自己的栖身之所。”<br>
+                关于“猎鹰”……他是沙海上行走的传奇，独来独往的雇佣兵，擅长潜伏狙击和猎杀……而且他从来不需要同伴。<br>
+                来到戈壁沙海，他是你接触的第一个能力者。<br>
                 而再次相遇，则是在冲突之中。</p>
         </div>
         <div class="lingjie">
-            <p>“我不是神,但我拥有的力量决定了我能做到很多事情.回应大家的愿望并不需要‘神明’的头衔.”
-                最初亦是最神秘的灵主，知晓伽伊路塔的秘密。如今，他对自己所知的一切保持缄默。
+            <p>灵界</p>
+            <p>“我不是神,但我拥有的力量决定了我能做到很多事情.回应大家的愿望并不需要‘神明’的头衔.”<br>
+                最初亦是最神秘的灵主，知晓伽伊路塔的秘密。如今，他对自己所知的一切保持缄默。<br>
             </p>
         </div>
         </div>
@@ -76,29 +193,40 @@
     <section id="gallery" class="gallery">
         <div class="container">
             <h2>Gallery</h2>
-            <div class="slider">
-                <div class="slides">
-                    <img src="1.jpg" alt="画廊1" class="slide">
-                    <img src="2.jpg" alt="画廊2" class="slide">
-                    <img src="images/gallery3.jpg" alt="画廊3" class="slide">
-                </div>
-                <button class="prev" onclick="prevSlide()">&#10094;</button>
-                <button class="next" onclick="nextSlide()">&#10095;</button>
-            </div>
-        </div>
-    </section>
+
+    <title>横向排列图片</title>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: space-between; /* 图片之间的间距 */
+        }
+        .image-container img {
+            width: 30%; /* 根据需要调整宽度 */
+            transition:transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.1); /* 放大1.1倍 */
+    </style>
+
+    <div class="image-container">
+        <img src="深匿寂影2的副本.jpg" alt="Image 1">
+        <img src="司岚-湮没-突破前的副本.jpg" alt="Image 2">
+        <img src="司岚SSR[薜萝藏虺]的副本.jpg" alt="Image 3">
+    </div>
+
+
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>联系</h2>
+            <h2>Contact</h2>
             <form id="contact-form">
-                <label for="name">姓名:</label>
+                <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                <label for="email">邮箱:</label>
+                <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-                <label for="message">留言:</label>
+                <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-                <button type="submit">发送</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     </section>
